@@ -33,7 +33,7 @@ function MyAdoptions() {
                     pets.map((pet) => (
                         <div key={pet._id} className={styles.petlist_row}>
                         <RoundedImage
-                            src={`http://localhost:5000/images/pets/${pet.images[0]}`}
+                            src={`https://cute-tan-katydid-wear.cyclic.app/images/pets/${pet.images[0]}`}
                             alt={pet.name}
                             width="75px"
                         />

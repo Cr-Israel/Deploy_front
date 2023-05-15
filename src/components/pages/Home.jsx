@@ -26,7 +26,8 @@ function Home() {
                 {pets.length > 0 &&
                     pets.map((pet) => (
                         <div className={styles.pet_card}>
-                            <div style={{ backgroundImage: `url(http://localhost:5000/images/pets/${pet.images[0]})` }} className={styles.pet_card_image}></div>
+                            <div style={{ backgroundImage: `url(https://cute-tan-katydid-wear.cyclic.app/images/pets/${pet.images[0]})` }} 
+                            className={styles.pet_card_image}></div>
                             <h3>{pet.name}</h3>
                             <p>
                                 <span className="bold">Peso:</span> {pet.weight}kg

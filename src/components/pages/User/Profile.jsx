@@ -68,7 +68,7 @@ function Profile() {
             <div className={styles.profile_header}>
                 <h1>Perfil</h1>
                 {(user.image || preview) && (
-                    <RoundedImage src={preview ? URL.createObjectURL(preview) : `http://localhost:5000/images/users/${user.image}`} 
+                    <RoundedImage src={preview ? URL.createObjectURL(preview) : `https://cute-tan-katydid-wear.cyclic.app/images/users/${user.image}`} 
                     alt={user.name} />
                     
                 )}

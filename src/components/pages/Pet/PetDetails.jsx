@@ -49,7 +49,7 @@ function PetDetails() {
                     <div className={styles.pet_images}>
                         {pet.images.map((image, index) => (
                             <img
-                                src={`http://localhost:5000/images/pets/${image}`}
+                                src={`https://cute-tan-katydid-wear.cyclic.app/images/pets/${image}`}
                                 alt={pet.name}
                                 key={index}
                             />
