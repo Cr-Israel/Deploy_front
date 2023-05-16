@@ -18,7 +18,8 @@ function MyPets() {
     useEffect(() => {
         api.get('/pets/mypets', {
             headers: {
-                Authorization: `Bearer ${JSON.parse(token)}`
+                Authorization: `Bearer ${JSON.parse(token)}`,
+                'Content-Type': 'multipart/form-data'
             }
         }).then((response) => {
             setPets(response.data.pets)
@@ -30,7 +31,8 @@ function MyPets() {
 
         const data = await api.delete(`/pets/${id}`, {
             headers: {
-                Authorization: `Bearer ${JSON.parse(token)}`
+                Authorization: `Bearer ${JSON.parse(token)}`,
+                'Content-Type': 'multipart/form-data'
             }
         }).then((response) => {
             const updatedPets = pets.filter((pet) => pet._id !== id);
