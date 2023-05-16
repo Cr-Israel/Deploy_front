@@ -26,7 +26,8 @@ function PetDetails() {
 
         const data = await api.patch(`pets/schedule/${pet._id}`, {
             headers: {
-                Authorization: `Bearer ${JSON.parse(token)}`
+                Authorization: `Bearer ${JSON.parse(token)}`,
+                'Content-Type': 'multipart/form-data'
             }
         }).then((response) => {
             return response.data

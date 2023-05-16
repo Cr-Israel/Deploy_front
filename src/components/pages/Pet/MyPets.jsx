@@ -49,7 +49,8 @@ function MyPets() {
 
         const data = await api.patch(`/pets/conclude/${id}`, {
             headers: {
-                Authorization: `Bearer ${JSON.parse(token)}`
+                Authorization: `Bearer ${JSON.parse(token)}`,
+                'Content-Type': 'multipart/form-data'
             }
         }).then((response) => {
             return response.data
